@@ -7,6 +7,7 @@
     <title>Keszr - alpha</title>
 
     <link rel="stylesheet" href="lib/ionicframework/ionic.min.css" />
+    <link rel="stylesheet" href="lib/ionicframework/css/ionicons.min.css" />
     
     <script src="lib/ionicframework/ionic.bundle.min.js"></script>
 
@@ -14,13 +15,57 @@
     <script src="js/app.js"></script>
 </head>
 
-<body ng-controller="AppCtrl">    
-	<ion-header-bar class="bar-positive">
-		<h1 class="title">Keszr - alpha</h1>
-	</ion-header-bar>
-	
-	<ion-content padding="true">
-		
-	</ion-content>
+<body ng-controller="AppCtrl">
+    <ion-side-menus>
+        <ion-side-menu-content>
+            <ion-header-bar class="bar-positive">
+                <div class="buttons">
+                    <button class="button icon button-clear ion-navicon-round" ng-click="toggleLeftMenu()"></button>
+                </div>
+                <h1 class="title">Keszr - alpha</h1>
+            </ion-header-bar>
+            
+            <ion-content padding="true">
+                <div class="card">
+                  <div class="item item-divider">
+                    Changelog
+                  </div>
+                  <div class="item item-text-wrap">
+                    <strong>0.0.1 @ 29.10.2015</strong><br />
+                    Projekt<br />
+                    Prosty statyczny interfejs<br />
+                  </div>
+                </div>
+            </ion-content>
+        </ion-side-menu-content>
+        <ion-side-menu side="left">
+            <ion-list>
+                <ion-item class="item item-icon-left">
+                    Informacje o aplikacji
+                    <i class="icon ion-home icon-accessory"></i>
+                </ion-item>
+                <ion-item class="item item-icon-left">
+                    Mapa keszy
+                    <i class="icon ion-map icon-accessory"></i>
+                </ion-item>
+                <ion-item class="item item-icon-left">
+                    Zdobyte kesze
+                    <i class="icon ion-checkmark-circled icon-accessory"></i>
+                </ion-item>
+                <ion-item class="item item-icon-left">
+                    W drogę!
+                    <i class="icon ion-navigate icon-accessory"></i>
+                </ion-item>
+                <ion-item class="item item-icon-left">
+                    Ustawienia
+                    <i class="icon ion-gear-b icon-accessory"></i>
+                </ion-item>
+                <ion-item class="item item-icon-left">
+                    Znajomi
+                    <i class="icon ion-person-stalker icon-accessory"></i>
+                </ion-item>
+            </ion-list>
+        </ion-side-menu>
+    </ion-side-menus>
 </body>
 </html>

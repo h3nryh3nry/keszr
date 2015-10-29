@@ -9,6 +9,7 @@
 
 ### Build and installation
  - Get the source from repository
+ - Get the most recent version of [ionicons.com], and extract the `fonts` folder to `www/lib/ionicframework/fonts/`
  - Import the project into **IntelXDK** (free registration needed) 
  - Build an application using **IntelXDK**
 
@@ -21,3 +22,4 @@ As for now, the project is in the "proof-of-concept" stage.
 Therefore, the best IMO way to contribute is to send ideas of features, rather than merge requests.
  
 [opencaching.pl]: <http://www.opencaching.pl>
+[ionicons.com]: <http://www.ionicons.com>
