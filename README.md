@@ -4,7 +4,7 @@
 \[EN\] [opencaching.pl]'s mobile application.
 
 ### Version, status
-**Version**: 0.0.1
+**Version**: 0.0.3
 **Status**: Early stage of development, _proof of concept_
 
 ### Build and installation
@@ -17,9 +17,14 @@
 Want to contribute? Technologies used:
  - IntelXDK as IDE
  - Ionic.js with Cordova
+ - Angularjs (as part of ionic stack)
  
 As for now, the project is in the "proof-of-concept" stage.
-Therefore, the best IMO way to contribute is to send ideas of features, rather than merge requests.
+Therefore, the best IMO way to contribute is to send ideas of features.
+I'd be also happy to accept any valuable merge requests (I am not a _angularjs_ or _ionic_ hacker_ yet).
+
+### What works?
+ - online leafletjs map
  
 [opencaching.pl]: <http://www.opencaching.pl>
 [ionicons.com]: <http://www.ionicons.com>
