@@ -1,4 +1,4 @@
-var app = angular.module('ionicApp', ['ionic']);
+var app = angular.module('ionicApp', ['ionic', 'leaflet-directive']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     // Allowed application states
@@ -43,5 +43,18 @@ var AppCtrl = app.controller('AppCtrl', function($scope, $ionicSideMenuDelegate)
     });
 
  });
-              
+
+var MapController = app.controller('MapController', ['$scope', function($scope) {
+    angular.extend($scope, {
+        mapCenter : {
+            lat : 52.407,
+            lng : 16.934,
+            zoom : 15
+        },
+        defaults: {
+            tileLayer: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+            zoomControlPosition: 'topright',
+        }
+    });
+}]);
               
