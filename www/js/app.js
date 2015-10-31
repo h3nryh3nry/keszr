@@ -1,4 +1,4 @@
-var app = angular.module('ionicApp', ['ionic', 'leaflet-directive']);
+var app = angular.module('keszr', ['ionic', 'leaflet-directive']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     // Allowed application states
@@ -32,8 +32,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 });
 
-var AppCtrl = app.controller('AppCtrl', function($scope, $ionicSideMenuDelegate) {
-    
+var AppCtrl = app.controller('AppCtrl', function($scope, $ionicSideMenuDelegate) {    
     $scope.toggleLeftMenu = function() {
         $ionicSideMenuDelegate.toggleLeft();
     };
@@ -41,20 +40,4 @@ var AppCtrl = app.controller('AppCtrl', function($scope, $ionicSideMenuDelegate)
     ionic.Platform.ready(function() {
         intel.xdk.device.hideSplashScreen();
     });
-
- });
-
-var MapController = app.controller('MapController', ['$scope', function($scope) {
-    angular.extend($scope, {
-        mapCenter : {
-            lat : 52.407,
-            lng : 16.934,
-            zoom : 15
-        },
-        defaults: {
-            tileLayer: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
-            zoomControlPosition: 'topright',
-        }
-    });
-}]);
-              
+});
