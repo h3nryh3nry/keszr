@@ -1,15 +1,17 @@
 # Keszr
-
-\[PL\] Aplikacja wspomagająca keszowanie na platformie [opencaching.pl].
 \[EN\] [opencaching.pl]'s mobile application.
 
+\[PL\] Aplikacja wspomagająca keszowanie na platformie [opencaching.pl].
+
 ### Version, status
-**Version**: 0.0.3
+**Version**: 0.0.4
 **Status**: Early stage of development, _proof of concept_
 
 ### Build and installation
  - Get the source from repository
  - Get the most recent version of [ionicons.com], and extract the `fonts` folder to `www/lib/ionicframework/fonts/`
+ - Create `www/js/apikey.js` file containing definitions of the following global variables: ```CONSUMER_KEY = "your_consumer_key_here";
+API_KEY = "your_api_key_here__get_one_from_okapi___";```
  - Import the project into **IntelXDK** (free registration needed) 
  - Build an application using **IntelXDK**
 
@@ -21,10 +23,11 @@ Want to contribute? Technologies used:
  
 As for now, the project is in the "proof-of-concept" stage.
 Therefore, the best IMO way to contribute is to send ideas of features.
-I'd be also happy to accept any valuable merge requests (I am not a _angularjs_ or _ionic_ hacker_ yet).
+I'd be happy to accept any valuable merge requests (as I am not a _angularjs_ or _ionic hacker_ yet).
 
 ### What works?
  - online leafletjs map
+ - fetching caches near the centre of Poznan from OKAPI
  
 [opencaching.pl]: <http://www.opencaching.pl>
 [ionicons.com]: <http://www.ionicons.com>
