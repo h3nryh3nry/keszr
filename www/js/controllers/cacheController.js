@@ -18,7 +18,7 @@ var CacheController = angular.module('keszr').controller('CacheController', ['$s
             '&consumer_key=' +  CONSUMER_KEY +            
             '&langpref=pl' + 
             '&fields=code|name|location|type|status|url|owner|founds|notfounds|size2';
-    }
+    };
     
     /**
      * Returns URL to the OKAPI endpoint, that gets all the OKAPI attributes

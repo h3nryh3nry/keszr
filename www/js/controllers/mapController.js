@@ -1,4 +1,4 @@
-var MapController = angular.module('keszr').controller('MapController', ['$scope', '$http', function($scope, $http) {
+var MapController = angular.module('keszr').controller('MapController', ['$scope', '$http', 'iconTypeFilter', function($scope, $http, iconTypeFilter) {
     /**
      * Finds the name, location and type of nearest caches using OKAPI.
      */
@@ -29,7 +29,8 @@ var MapController = angular.module('keszr').controller('MapController', ['$scope
                 lat : +cache.location.substr(0, pipeLocation),
                 lng : +cache.location.substr(pipeLocation + 1),
                 type : cache.type,
-                message : "<a href='#/cache/" + key + "'>" + cache.name + "</a>"
+                icon : iconTypeFilter(cache.type),
+                message : "<a href='#/cache/" + key + "'>" + cache.name + "</a>, " + cache.type
             };
         });
         
