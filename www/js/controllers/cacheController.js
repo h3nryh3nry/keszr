@@ -17,7 +17,7 @@ var CacheController = angular.module('keszr').controller('CacheController', ['$s
             '?cache_code=' + cacheId + 
             '&consumer_key=' +  CONSUMER_KEY +            
             '&langpref=pl' + 
-            '&fields=code|name|location|type|status|url|owner|founds|notfounds|size2';
+            '&fields=code|name|location|type|status|url|owner|founds|notfounds|size2|description|hint2';
     };
     
     /**

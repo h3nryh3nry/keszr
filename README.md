@@ -4,7 +4,7 @@
 \[PL\] Aplikacja wspomagająca keszowanie na platformie [opencaching.pl].
 
 ### Version, status
-**Version**: 0.0.6
+**Version**: 0.0.7
 **Status**: Early stage of development, _proof of concept_
 
 ### Build and installation
