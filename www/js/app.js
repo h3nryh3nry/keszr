@@ -26,6 +26,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('settings', {
             url : '/settings',
             templateUrl: 'templates/settings.html'
+        })
+        .state('cache', {
+            url : '/cache/:cacheId',
+            templateUrl: 'templates/cache.html',
+            controller: 'CacheController'
         });
     
     // When route does not match, go to '/'

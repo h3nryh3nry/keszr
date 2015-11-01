@@ -23,18 +23,21 @@ var MapController = angular.module('keszr').controller('MapController', ['$scope
      * Proof of concept 
      */
     $http.get(apiUrlGetNearestCaches("52.407", "16.934")).success(function(response) {
-        response = _.map(response, function(a) {
-            var pipeLocation = a.location.indexOf('|');
+        response = _.map(response, function(cache, key) {
+            var pipeLocation = cache.location.indexOf('|'); 
             return {
-                lat : +a.location.substr(0, pipeLocation),
-                lng : +a.location.substr(pipeLocation + 1),
-                message : a.name
+                lat : +cache.location.substr(0, pipeLocation),
+                lng : +cache.location.substr(pipeLocation + 1),
+                type : cache.type,
+                message : "<a href='#/cache/" + key + "'>" + cache.name + "</a>"
             };
         });
         
         angular.extend($scope, {
             markers : response
         });
+    }).error(function(response, error){
+        console.warn(response, error);
     });
     
     // Default data

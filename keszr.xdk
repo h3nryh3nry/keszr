@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "webapp/template-ionic-angularjs-starter/sample.zip",
       "projectGuid": "c1c10612-ebf9-43b1-8921-40f0483cddaf",
-      "lastModifiedDate": 1446309337495,
+      "lastModifiedDate": 1446393966473,
       "creationDate": 1446133437226
     },
     "sourceDirectory": "www",
@@ -38,12 +38,17 @@
         "appName_": "keszr",
         "appID_": "pl.henryhenry.keszr",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [
             "*"
           ],
-          "intents": [],
-          "navigation": []
+          "intents": [
+            "http://opencaching.pl",
+            "https://opencaching.pl"
+          ],
+          "navigation": [
+            "*"
+          ]
         },
         "icons_": [],
         "splashes_": [],
@@ -51,7 +56,7 @@
         "excludedLibraries_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "5.1.1",
-        "appVersion_": "0.0.4",
+        "appVersion_": "0.0.5",
         "appVersionCode_": "1",
         "crosswalkVersion_": "14",
         "appDescription_": "Aplikacja wspomagająca keszowanie na opencaching.pl",
@@ -70,12 +75,17 @@
         "appName_": "keszr",
         "appID_": "pl.henryhenry.keszr",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [
             "*"
           ],
-          "intents": [],
-          "navigation": []
+          "intents": [
+            "https://opencaching.pl",
+            "http://opencaching.pl"
+          ],
+          "navigation": [
+            "*"
+          ]
         },
         "icons_": [],
         "splashes_": [],
@@ -83,7 +93,7 @@
         "excludedLibraries_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "5.1.1",
-        "appVersion_": "0.0.4",
+        "appVersion_": "0.0.5",
         "appVersionCode_": "1",
         "crosswalkVersion_": "15",
         "appDescription_": "Aplikacja wspomagająca keszowanie na opencaching.pl",
@@ -114,7 +124,7 @@
         "excludedLibraries_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "5.1.1",
-        "appVersion_": "0.0.4",
+        "appVersion_": "0.0.5",
         "appDescription_": "Aplikacja wspomagająca keszowanie na opencaching.pl",
         "appAuthor_": "Jacek Lebioda"
       },
@@ -140,7 +150,7 @@
         "excludedLibraries_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "5.1.1",
-        "appVersion_": "0.0.4.0",
+        "appVersion_": "0.0.5.0",
         "appDescription_": "Aplikacja wspomagająca keszowanie na opencaching.pl",
         "appAuthor_": "Jacek Lebioda"
       },
