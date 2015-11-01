@@ -29,6 +29,7 @@ I'd be happy to accept any valuable merge requests (as I am not a _angularjs_ or
  - online leafletjs map (each cache type has distinct color)
  - fetching caches near the centre of Poznan from OKAPI
  - displaying log entries of selected caches
+ - displaying details of selected caches
  
 [opencaching.pl]: <http://www.opencaching.pl>
 [ionicons.com]: <http://www.ionicons.com>
